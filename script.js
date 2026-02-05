@@ -266,10 +266,10 @@ document.addEventListener('touchend', e => {
 });
 
 function handleSwipe() {
-    const threshold = 50;
+    const threshold = 100; // Naikkan dari 50px menjadi 100px agar kurang sensitif
     if (touchStartX - touchEndX > threshold && currentPage < pages.length - 1) {
         nextPage();
     } else if (touchEndX - touchStartX > threshold && currentPage > 0) {
         goToPage(currentPage - 1);
     }
-}
+}   
