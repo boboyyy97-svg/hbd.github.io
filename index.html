@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday 🎂</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Audio Global -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Audio Control Button -->
+    <button class="audio-control" id="audioControl" title="Toggle Music">
+        <span id="audioIcon">🔊</span>
+    </button>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- PAGE 1: THE COVER -->
+        <div class="page page-cover active">
+            <div class="decoration deco-1"></div>
+            <div class="decoration deco-2"></div>
+            <div class="cover-content">
+                <div class="cover-emoji">🎂</div>
+                <h1 class="cover-title">Happy Birthday!</h1>
+                <p class="cover-subtitle">Klik untuk memulai perjalanan kebahagiaan</p>
+                <button class="btn-open" onclick="nextPage()">Buka Kado ✨</button>
+            </div>
+        </div>
+
+        <!-- PAGE 2: THE STORY -->
+        <div class="page page-story">
+            <div class="story-container">
+                <h2 class="story-title">Ada Surat Untuk Km....</h2>
+                
+                <!-- Story Photos with Captions -->
+                <div class="story-photo-grid">
+                    <div class="story-photo-card">
+                        <img src="img/story-1.jpg" alt="Momen Bahagia" onclick="openLightbox(this.src)">
+                        <p class="story-photo-caption">Kenapa aku pilih foto ini ya karena emang pandangan pertama aku milih ini sampe kusuruh kam kan buat ini pp kam. tapi sekarang gada lagi but it's oke</p>
+                    </div>
+                    <div class="story-photo-card">
+                        <img src="img/story-2.jpg" alt="Saat Spesial" onclick="openLightbox(this.src)">
+                        <p class="story-photo-caption">Ini Foto pertama ipon kita ituu wkwk, cantik kan? iya lah, Pacarku soalnya. Makanya ku suruh kam post ig ku, banyak juga yang sukaa.</p>
+                    </div>
+                </div>
+
+                <!-- Story Text -->
+                <div class="story-text-section">
+                    <p class="story-paragraph">
+                        Halooo sayangkuuu, cintaku, Tepat Hari di tanggal 7 ini adalah hari spesial km untuk merayakan bertambahnya usia kam. Di hari ini, aku ingin kam tahu satu hal sederhana: kehadiran km itu berarti.
+                        Mungkin aku belum bisa berdiri di samping km hari ini, belum bisa melihat langsung senyum km saat meniup lilin, tapi jarak tidak pernah mengurangi caraku peduli dan caraku mendoakan km.
+                    </p>
+                    <p class="story-paragraph">
+                        Di usia baru km ini, aku berharap km selalu dikelilingi hal-hal baik. Semoga langkah km ringan, pikiran km tenang, dan hati km selalu tahu bahwa kam pantas dicintai tanpa harus menjadi siapa-siapa selain diri km sendiri.
+                        Kalau suatu hari km lelah, ingatlah bahwa km tidak sendiri. Ada aku, dari jauh, yang selalu percaya ke km, yang selalu bangga pada km, dan yang selalu berharap bisa menjadi bagian dari hal-hal baik dalam hidup km.
+                    </p>
+                    <p class="story-quote">
+                        “Sebab Aku ini mengetahui rancangan-rancangan apa yang ada pada-Ku mengenai kamu, demikianlah firman TUHAN, yaitu rancangan damai sejahtera dan bukan rancangan kecelakaan, untuk memberikan kepadamu hari depan yang penuh harapan.” 
+                        - Yeremia 29:11
+                    </p>
+                    <p class="story-paragraph">
+                        Kam pernah bilang ke aku sayang aku seperti simbol Clover. Sejak itu, aku memikirkannya pelan-pelan. Dan aku mengerti sekarang. Clover tidak tumbuh untuk dipamerkan. Ia hadir sederhana, nyaris tak disadari, namun bagi siapa pun yang menemukannya, ia membawa arti yang besar. Empat daunnya menyimpan makna yang tenang: tentang harapan di hari depan, tentang kepercayaan meski jalan tidak selalu dekat, tentang cinta yang tidak perlu banyak suara, dan tentang keberuntungan karena dipertemukan. Seperti kam. Tidak berisik, tidak berlebihan, tapi kehadiran km membuat banyak hal terasa lebih baik.
+                    </p>
+                    <p class="story-paragraph">
+                        Kiranya kasih dan kesetiaan selalu menjadi bagian dari hidupmu sayang, bukan hanya di hari ini, tetapi di setiap langkah yang akan km jalani. Selamat bertambah usia sayangkuuu. Semoga tahun ini kemengan bersama kita ya kekelengenn.
+                    </p>
+                    <p class="story-paragraph">
+                        - Tri Boy Girsang Pacarmu.....
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE 3: GALLERY -->
+        <div class="page page-gallery">
+            <h2 class="gallery-title">Mungkin Ada Beberapa Foto Km ga suka, ya maaf ya, aku SUKA SOALNYA!!!</h2>
+            
+            <!-- Featured Photos -->
+            <div class="gallery-featured">
+                <div class="gallery-featured-card" onclick="openLightbox('img/gallery-featured-1.jpg')">
+                    <img src="img/gallery-featured-1.jpg" alt="Kebersamaan" class="gallery-featured-img">
+                    <p class="gallery-featured-caption">Km masih ingat ini ga? Kemarin teman kam post story di kasih bunga. disitu aku sadar aku juga harus melakukannya </p>
+                </div>
+                <div class="gallery-featured-card" onclick="openLightbox('img/gallery-featured-2.jpg')">
+                    <img src="img/gallery-featured-2.jpg" alt="Petualangan" class="gallery-featured-img">
+                    <p class="gallery-featured-caption">Itu lah makanya ku minta pap kam terus, ya emang karena aku suka dan buat semangaatt    </p>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be populated by JavaScript -->
+            </div>
+
+            <!-- Gallery Quote Box -->
+            <div class="gallery-quote-box">
+                <p class="gallery-quote-text">
+                    "Terima kasih telah menjadi bagian dari setiap momen berharga dalam hidup ku walapun kita masih banyak yang ga sepaham. Setiap foto di sini adalah bukti nyata dari kebahagiaan yang kita bagikan bersama."
+                </p>
+                <p class="gallery-quote-author">— Kidung Agung 4:7 </p>
+                "Engkau Cantik Sekali, Manisku, Tak Ada Cacat Cela Padamu"
+
+
+
+                
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-content">
+                <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+                <img id="lightboxImg" class="lightbox-img" src="" alt="">
+            </div>
+        </div>
+
+        <!-- PAGE 4: THE WISH -->
+        <div class="page page-wish">
+            <div class="wish-container">
+                <div class="wish-emoji">🌟</div>
+                <h2 class="wish-title">Terima Kasih!</h2>
+                <p class="wish-text">     Semoga kam Suka ya hehhe.</p>
+                
+                <!-- Wish Decoration -->
+                <div class="wish-decoration">
+                    <span class="wish-decoration-item">💝</span>
+                    <span class="wish-decoration-item">🎉</span>
+                    <span class="wish-decoration-item">💝</span>
+                </div>
+
+                <!-- Wish Message -->
+                <div class="wish-message">
+                    <p class="wish-message-text">
+                        "“Jangan pernah lelah menjalani semua ini.
+Semoga, pada waktunya, dunia berpihak pada kita.
+Dengan tenang, aku selalu memilih kamu.” 🍀
+                    </p>
+                    <p class="wish-message-author">— bg boyyy </p>
+                </div>
+
+                <button class="btn-confetti" onclick="createConfetti()">Rayakan Sekarang! 🎊</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <div class="nav-dot active" onclick="goToPage(0)"></div>
+        <div class="nav-dot" onclick="goToPage(1)"></div>
+        <div class="nav-dot" onclick="goToPage(2)"></div>
+        <div class="nav-dot" onclick="goToPage(3)"></div>
+    </nav>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

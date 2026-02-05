@@ -1,0 +1,158 @@
+=====================================
+  🎂 PANDUAN SINGKAT BIRTHDAY WEBSITE
+=====================================
+
+📦 FILE YANG ADA:
+- index.html     → Struktur website (bisa edit text, foto paths)
+- style.css      → Design & warna (bisa edit warna tema)
+- script.js      → Logic website (gallery, countdown, etc)
+- README.md      → Panduan lengkap
+
+=====================================
+🚀 LANGKAH SETUP CEPAT
+=====================================
+
+1. BUAT FOLDER BERNAMA "img" (untuk foto)
+
+2. KUMPULKAN FOTO & MUSIK:
+   - music.mp3 (lagu - letakkan di folder utama)
+   
+   Untuk folder "img/":
+   - story-1.jpg (foto slide 2 kiri)
+   - story-2.jpg (foto slide 2 kanan)
+   - gallery-featured-1.jpg (foto gallery besar kiri)
+   - gallery-featured-2.jpg (foto gallery besar kanan)
+   - gallery-1.jpg, gallery-2.jpg, gallery-3.jpg, gallery-4.jpg
+
+3. EDIT TEXT:
+   Buka index.html dengan text editor:
+   - Ganti "Happy Birthday!" dengan text yang mau
+   - Ganti caption foto
+   - Ganti semua text cerita di slide 2
+
+4. UPLOAD KE NETLIFY:
+   a. Compress semua file jadi ZIP
+   b. Buka https://netlify.com
+   c. Sign up (pakai Google)
+   d. Drag-drop ZIP folder
+   e. SELESAI! Dapat link otomatis
+
+=====================================
+✏️ CARA EDIT TEXT DI INDEX.HTML
+=====================================
+
+SLIDE 1 (Cover):
+- Cari: "Happy Birthday!" → Ganti teks di <h1>
+- Cari: "Klik untuk memulai..." → Ganti subtitle
+
+SLIDE 2 (Story):
+- Cari: "Setiap senyuman mu..." → Edit caption foto
+- Cari: "Hari ini adalah..." → Edit semua paragraf cerita
+
+SLIDE 4 (Wish):
+- Cari: "Terima Kasih!" → Ganti judul
+- Cari: "Terima kasih telah melepas..." → Ganti pesan
+
+=====================================
+🎨 CARA GANTI WARNA (style.css)
+=====================================
+
+Cari bagian:
+:root {
+    --primary-color: #D4A574;
+    --secondary-color: #E8D4C4;
+}
+
+Ganti kode warna (6 digit hex):
+Contoh warna cantik:
+- Biru: #4A90E2
+- Pink: #E87BA6
+- Hijau: #6FBE8F
+
+=====================================
+🎵 CARA GANTI MUSIK
+=====================================
+
+1. Download lagu MP3 (dari YouTube ke MP3, Spotify, dll)
+2. Rename jadi "music.mp3"
+3. Letakkan di folder yang sama dengan index.html
+4. SELESAI! (auto-play saat website dibuka)
+
+=====================================
+📱 UPLOAD KE INTERNET (PALING MUDAH)
+=====================================
+
+CARA NETLIFY:
+1. Siapkan semua file (index.html, style.css, script.js, music.mp3, folder img/)
+2. Buka https://netlify.com
+3. Klik "Sign up" (pakai Google/Email)
+4. Drag-drop folder ke area upload
+5. Tunggu 1-2 menit
+6. Dapat URL otomatis! Contoh: https://happy-birthday-xyz.netlify.app
+
+CARA CEPAT LAIN:
+- https://github.com (GitHub Pages) - gratis permanent
+- https://vercel.com (Vercel) - super cepat
+
+=====================================
+📸 TIPS FOTO TERBAIK
+=====================================
+
+Ukuran optimal:
+- Slide 2: 500x400 px
+- Gallery Featured: 600x500 px
+- Gallery Grid: 400x400 px
+
+Kualitas: Minimal 1200px lebar
+Format: JPG atau PNG
+Software: Compress di TinyPNG.com untuk file kecil
+
+=====================================
+🧪 TEST SEBELUM UPLOAD
+=====================================
+
+1. Buka index.html di browser desktop
+2. Test klik "Buka Kado"
+3. Dengarkan musik
+4. Swipe/navigate antar slide
+5. Klik foto untuk zoom
+6. Klik tombol confetti
+7. Cek di HP (penting! responsive design)
+
+=====================================
+💡 COMMON MISTAKES
+=====================================
+
+❌ Foto tidak muncul?
+✅ Pastikan nama file EXACT: story-1.jpg (case-sensitive)
+✅ Pastikan ada folder "img/" di folder utama
+
+❌ Musik tidak terdengar?
+✅ Pastikan file "music.mp3" ada di folder utama
+✅ Nama file harus "music.mp3" (bukan Music.mp3)
+✅ Format harus MP3
+
+❌ Website tidak responsive di HP?
+✅ Style.css sudah responsive, cek di mobile browser
+
+=====================================
+📧 FILE KECEPATAN EDIT
+=====================================
+
+Text:        index.html
+Musik:       Ganti file music.mp3
+Foto:        Ganti file di folder img/
+Warna:       Edit :root di style.css
+Animasi:     Edit @keyframes di style.css
+
+=====================================
+✨ SELESAI!
+=====================================
+
+Tinggal:
+1. Edit semua text
+2. Siapkan musik & foto
+3. Upload ke Netlify
+4. Share link ke teman!
+
+Good luck! 🎉
